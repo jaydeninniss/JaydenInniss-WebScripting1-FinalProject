@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Web - Photo Gallery - Jayden Inniss</title>
+    <title>Web Scripting - Photo Gallery - Jayden Inniss</title>
+
+
+
+ <!-- Lightgallery is the lightbox gallery plugin!  -->
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lightgallery.css" />
+
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="node_modules/lightgallery/css/lg-thumbnail.css" />
+
     <link rel="stylesheet" href="./css/style.css">
-
-
-
 </head>
 <body>
 
@@ -39,58 +46,87 @@
     </div>
 
 
-    <div class="photogallery">
+    <div id="lightgallery">
 
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-1.jpg" alt="">
+        <a href="images/gallery/photogrid-35.jpg" data-lg-size="1600-2400" >
+            <img class="indvimg" alt="1" src="images/gallery/photogrid-35.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-19.JPG" data-lg-size="1024-800">
+            <img class="indvimg"  alt="2" src="images/gallery/photogrid-19.JPG" />
+        </a>
+
+        <a href="images/gallery/photogrid-2.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="2" src="images/gallery/photogrid-2.jpg" />
+      </a>
+
+        <a href="images/gallery/photogrid-3.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="4" src="images/gallery/photogrid-3.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-4.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="5" src="images/gallery/photogrid-4.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-5.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="5" src="images/gallery/photogrid-5.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-6.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-6.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-66.jpeg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-66.jpeg" />
+        </a>
+
+        <a href="images/gallery/photogrid-30.jpeg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-30.jpeg" />
+        </a>
+
+        <a href="images/gallery/photogrid-9.JPG" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-9.JPG" />
+        </a>
+
+        <a href="images/gallery/photogrid-10.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-10.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-11.JPG" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-11.JPG" />
+        </a>
+
+        <a href="images/gallery/photogrid-69.jpeg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-69.jpeg" />
+        </a>
+
+        <a href="images/gallery/photogrid-13.JPG" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-13.JPG" />
+        </a>
+
+        <a href="images/gallery/photogrid-14.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-14.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-15.JPG" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-15.JPG" />
+        </a>
+
+        <a href="images/gallery/photogrid-16.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-16.jpg" />
+        </a>
+
+        <a href="images/gallery/photogrid-53.jpg" data-lg-size="1024-800">
+          <img class="indvimg"  alt="7" src="images/gallery/photogrid-53.jpg" />
+        </a>
+
       </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-2.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-3.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-4.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-5.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-6.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-7.jpeg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-8.jpg" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-9.JPG" alt="">
-      </div>
-      <div class="singlephoto">
-        <img src="images/gallery/photogrid-10.jpg" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-11.JPG" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-12.jpg" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-13.JPG" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-14.jpg" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-15.JPG" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-16.jpg" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-17.jpg" alt="">
-      </div>      <div class="singlephoto">
-        <img src="images/gallery/photogrid-18.JPG" alt="">
-      </div>
+
+
 
           
       
-    </div>
+ 
 
 
     <footer>
@@ -115,6 +151,21 @@
 
     <script src="/scripts/script.js"></script>
     <!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
+
+    <script src="node_modules/lightgallery/lightgallery.umd.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="node_modules/lightgallery/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="node_modules/lightgallery/plugins/zoom/lg-zoom.umd.js"></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById('lightgallery'), {
+          plugins: [lgZoom, lgThumbnail],
+          speed: 500,
+
+
+      });
+  </script>
     
 </body>
 </html>

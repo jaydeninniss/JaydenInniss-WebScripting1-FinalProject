@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Web - Jayden Inniss</title>
+    <title>Web Scripting - Jayden Inniss</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
     </div>
 
     <div class="anchors" id="photoanchor">
-        <h2>PHOTO</h2>
+        <h2>PHOTO PORTFOLIO</h2>
     </div>
 
     <div class="photobanner">
@@ -94,15 +94,47 @@
 
     
     <div class="anchors" id="videoanchor">
-        <h2>VIDEO</h2>
+        <h2>VIDEO REEL</h2>
     </div>
 
     <div class="bigvideo">
 
-      <video  id="bigvideoreel" autoplay loop>
-        <source src=" images/videoreel.mp4" type="video/mp4">
-      </video>
+      <!-- <video  id="bigvideoreel" autoplay loop>
+        <source src=" images/videoreelhoriz.mp4" type="video/mp4">
+      </video> -->
+      <iframe id="bigvideoreel" src="https://www.youtube.com/embed/S4su3ClgqJk?si=BMtA00Jlo5IXQ2m_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>This video was made for School District 48 in collaboration with Tanina Williams. It had the goal of creating a video of Tanina Williams teaching staff how to make Plank Drums and play a traditional Sk̲wx̲wú7mesh and Lil̓wat7úl game. This project was a success as it is now being used to educate students/staff and is playing a role in Truth and Reconciliation efforts within our school district. I feel very fortunate to have been approached for this project as this video will continue to be used throughout the community for years to come. </p>
     </div>
+
+
+    <div style="text-align:center;">
+	    <table>
+	        <tr>
+	            <td></td>
+	            <td style="text-align:center;">
+                    <div><img id="main-image" alt="Main Image" style="width: 80vw; "/></div>
+
+                    <div><input id="current-index" /></div>    
+                </td>
+	            <td></td>
+	        
+	        </tr>
+	        <tr>
+	            <td>
+	                <img src="images/first.png" id="first_btn" />            
+	                <img src="images/prev.png" id="prev_btn" />
+	            </td>
+	            <td>
+	                <div id="thumbnail-area"></div>	        
+	            </td>
+	            <td>
+	                <img src="images/next.png" id="next_btn" />            
+	                <img src="images/last.png" id="last_btn" />
+	            </td>
+	        </tr>	    
+	    </table>       
+	</div>
+    
 
 
     <div class="anchors">
@@ -165,6 +197,7 @@
       <!-- This is initializing GSAP! I only used it in a few small places, but it was very handy! -->
 
     <script src="/scripts/script.js"></script>
+    <script src="/scripts/imagepicker.js"></script>
     <!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
 
 
