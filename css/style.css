@@ -1,0 +1,687 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #1e1e1e;
+}
+
+@font-face {
+font-family: "Circular STD"; 
+src: url('/fonts/CircularStd-Black.otf');
+format:("opentype");
+
+}
+
+@font-face {
+  font-family: "Circular STD-book"; 
+  src: url('/fonts/CircularStd-Book.otf');
+  format:("opentype");
+  
+  }
+
+.header {
+
+  position: relative;
+  z-index: 2;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  height: 35vh;
+}
+
+.pagetitle {
+  position: absolute;
+  top: 2vh;
+  left: 40vw;
+
+}
+
+.pagetitle h2{
+  font-size: 4rem;
+}
+
+h4 {
+  color: aliceblue;
+}
+
+.cityselect {
+  position: absolute;
+  top: 10vw;
+  
+
+}
+
+.weatherwidget {
+  display: flex;
+  width: 35vw;
+  position: relative;
+  background-color: #49768F;
+
+}
+
+#temp {
+  font-size: 4vw;
+  display: flex;
+  position: relative;
+  margin-left: 3vw;
+  margin-top: 5vw;
+}
+ 
+#main {
+  font-size: 3vw;
+  display: flex;
+  padding-left: 1vw;
+  position: relative;
+  margin-top: 5vw;
+}
+
+#city {
+  font-size: 2vw;
+  display: flex;
+  padding-left: 1vw;
+  position: relative;
+  margin-top: 5vw;
+}
+
+.weathericon {
+  width: 8vw;
+  height: 8vw;
+  background-image: url('/images/weathericons/sunny.png');
+  display: flex;
+  position: absolute;
+  margin-left: 1vw;
+  margin-top: -1vw;
+
+}
+
+.weathericonimg {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax {
+  background-image: url("/images/waterhero.jpg");
+  width: 100vw;
+  height: 90vh;
+  background-attachment: fixed;
+}
+
+.downarrow {
+	opacity: 0;
+	animation-name: fadeInOpacity;
+  animation-fill-mode: forwards;
+	animation-timing-function: ease-in;
+	animation-duration: 0.4s;
+  animation-delay: 1s;
+  filter: invert(1);
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 55vh;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+nav{
+
+    top: 3vw;
+    right: 4vw;
+
+    display: block;
+    position: fixed;
+
+  }
+  
+  nav a{
+    color: rgb(21, 154, 221);
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Circular STD', Arial, Helvetica, sans-serif;
+
+
+  }
+  
+  nav a:hover{
+    background-color:rgb(21, 154, 221);
+    color: #fff;
+    list-style-type: none;
+  }
+  
+  nav ul{
+
+    flex-direction: row;
+    overflow-y: hidden;
+
+    list-style-type: none;
+    text-align: right;
+
+  }
+
+
+  .banner {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .headlogo {
+    display: flex;
+    width: 55vmin;
+    position: absolute;
+    left: -15vmin;
+    top:-7vmin;
+  }
+
+  .anchors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Circular STD", sans-serif;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #fff;
+    text-align: center;
+    font-family: "Circular STD", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 250px;
+  }
+
+  #jaydeninniss {
+    padding: 0;
+    padding-right: 8vw;
+    justify-content: left;
+    text-align: left;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    color: #e9e9e9;
+    font-family: "Circular STD-book", Verdana, sans-serif;
+    font-weight: lighter;
+  }
+
+
+
+  .homepageAbout {
+    width: 55%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3vw;
+    padding-bottom: 4vw;
+  }
+
+  .homepageAbout p {
+    padding-top: 2vh;
+  }
+
+  .photogallery {
+    width: 97%;
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr 20fr;
+    gap: 1%;
+    position: relative;
+    padding-bottom: 10vw;
+  }
+  
+  .footercontent {
+    float: right;
+    position: absolute;
+    margin-left: 32vw;
+    margin-right: auto;
+    width: 40vw;
+    padding-top: -250px;
+  }
+
+  #footercontenth3 {
+    padding-top: 0;
+    display: flex;
+
+  }
+
+  .singlephoto {
+
+    height: 27vh;
+    width: 100%;
+
+    overflow: hidden;
+    position: relative;
+  }
+
+  .singlephoto img{
+
+   height: 100%;
+    position: relative;
+  }
+
+  .photochunk {
+    height: 655px;
+    background: #49768F;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+  }
+  
+  .photobanner {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 20fr 20fr 20fr 20fr;
+    }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .contactbg {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 2000px;
+    background-image: url("/images/landscape.jpg");
+    background-size: cover;
+  }
+
+  .contactinfo {
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 10vw;
+    display: flex;
+  
+  }
+
+  #contactname {
+    font-size: 2.3rem;
+    font-family: "Circular STD", Arial, Helvetica, sans-serif;
+  }
+
+  #contactemail {
+    font-size: 1.4rem;
+    font-family: "Circular STD", Arial, Helvetica, sans-serif;
+    margin-left: 40vw; 
+  }
+
+  #product {
+    background-image: url("/images/another.jpg");
+  }
+
+  #adventure {
+    background-image: url("/images/adventure.jpg");
+  }
+
+  #sport {
+    background-image: url("/images/sport.JPG");
+  }
+
+  #landscape {
+    background-image: url("/images/landscape.jpg");
+  }
+
+
+  #bigvideoreel {
+    display: flex;
+    margin: auto;
+    height: 60vh;
+    z-index: 8;
+  }
+
+
+
+
+  .mainproject {
+    width: 60%;
+    margin: auto;
+  }
+
+  .mainproject img {
+    width: 100%;
+
+  }
+
+  .thumbcontainer {
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 2%;
+  }
+
+  .projthumb {
+    width: 28%;
+  }
+
+  .projthumb img{
+    width: 100%;
+  }
+
+  .contact {
+    background-color: #2d2d2d;
+    padding-bottom: 200px;  
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    display: grid;
+  }
+
+.contact-img {
+  width: 80%;
+  display: flex; 
+  margin-top: 40%;
+  border-radius: 20px;
+}
+
+.contact h3 {
+
+  padding-top: 40px;
+}
+
+#contactpage {
+  display: flex;
+  position: relative;
+}
+
+#contactfooter {
+  margin-top: 210vh;
+}
+
+
+
+.anchors {
+  padding-top: 6vw;
+}
+
+.leftcontact {
+
+  position: relative;
+  display: grid;
+}
+
+.leftcontact p {
+  text-align: right;
+  padding-right: 10%;
+}
+
+.rightcontact {
+
+  position: relative;
+  display: grid;
+  text-align: right;
+}
+
+
+#hero-banner {
+  height: 80vh;
+}
+
+.photoherobanner {
+  background-image: url("/images/project1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 5vh;
+}
+
+
+@media screen and (min-width: 1300px) {
+
+  #bigvideoreel {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    rotate: 90deg;
+
+  }
+
+  #bigvideo {
+    display: flex;
+    margin: auto;
+    width: 80vw;
+    overflow: hidden;
+    rotate: 90deg;
+
+  }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .photobanner {
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+  }
+
+  .leftcontact p {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 0.9rem;
+  }
+
+  .photogallery {
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+
+  }
+
+  .photochunk {
+    height: 40vh;
+  }
+
+  .banner {
+    height: 300px;
+  }
+
+  .headlogo {
+    width: 70vmin;
+    left: -15vw;
+  }
+
+  #contactemail {
+    font-size: 1rem;
+
+  }
+
+  #photopagetitle {
+    font-size: 3rem;
+    margin-top: 40vh;
+  }
+
+
+  #hero-banner {
+    height: 50vh;
+  }
+
+  .photoherobanner {
+    background-image: url("/images/project1.png");
+    background-size: cover;
+    margin-bottom: 5vh;
+  }
+
+    .downarrow {
+    display: none;
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  h3 {
+    font-size: 2rem;
+
+  }
+
+  .photobanner {
+
+    grid-template-columns: 20fr;
+
+  }
+
+  .photogallery {
+
+    padding-top: 40px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+  }
+
+  .singlephoto {
+    height: 400px;
+  }
+
+  .photochunk {
+    height: 40vh;
+  }
+
+  .pagetitle {
+    left: 5vw;
+
+  }
+
+  nav a {
+    color: rgb(21, 154, 221);
+    text-decoration: none;
+    font-size: 1.5rem;
+
+  }
+
+  .banner {
+    height: 20vh;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .homepageAbout {
+    width: 90vw;
+  }
+
+  .downarrow {
+    display: none;
+  }
+
+  #hero-banner {
+    height: 36vh;
+  }
+
+  .photoherobanner {
+    background-image: url("/images/project1.png");
+    background-size: cover;
+  }
+
+  .headlogo {
+    width: 70vmin;
+    left: -15vw;
+  }
+
+  .leftcontact p {
+    text-align: right;
+    padding-right: 10%;
+    font-size: 0.7rem;
+  }
+
+
+  .photogallery {
+    width: 97vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.4vh;
+  }
+
+  .singlephoto {
+
+   width: 100vw;
+   height: 70vw;
+  }
+
+  .contactinfo {
+    position: relative;
+    margin-top: 100vh;
+    margin-left: 1vw;
+    display: flex;
+  
+  }
+
+  #contactpagetitle {
+    margin-top: 8vh;
+  }
+
+  .contactbg {
+
+    height: 100vh;
+
+  }
+
+  #contactname {
+    font-size: 1.5rem;
+    font-family: "Circular STD", Arial, Helvetica, sans-serif;
+    padding-left: 0;
+    width: 40vw;
+  }
+
+  #contactemail {
+    font-size: 1rem;
+    font-family: "Circular STD", Arial, Helvetica, sans-serif;
+    margin-left: 10vw;
+    padding-right: 0;
+  }
+
+  #contactfooter {
+    margin-top: 5vh;
+  }
+
+  .footercontent {
+    float: right;
+    position: absolute;
+    margin-left: 32vw;
+    margin-right: auto;
+    width: 40vw;
+    padding-top: -250px;
+  }
+
+
+  #footercontenth3 {
+    font-size: 1rem;
+  }
+
+}

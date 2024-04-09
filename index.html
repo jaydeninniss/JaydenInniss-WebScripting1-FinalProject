@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web - Jayden Inniss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    <header class="header">
+
+      <div class="banner">
+
+        <a href="index.html">
+            <img class="headlogo" src="images/wplogo.svg" alt="Whitewater Productions Logo">
+            </a>
+
+      </div>
+
+
+
+        <nav id="desktop-menu">
+            <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html#photoanchor">PHOTO</a></li>
+            <li><a href="index.html#videoanchor">VIDEO</a></li>
+            <li><a href="index.html#contactanchor">CONTACT</a></li>
+          </ul>
+        </nav>
+
+      </header>
+      
+      <div id="hero-banner" class="parallax">
+        
+        <img src="/images/down.svg" alt="Down Arrow" class="downarrow">
+     
+    </div>
+
+
+    <div class="homepageAbout">
+        <h3 id="jaydeninniss">Jayden Inniss</h3>
+        <p>
+          Whitewater Productions
+          is a multimedia production company proudly based in Whistler B.C.<br><br>
+          Specializing in sport, action, adventure and aerial imagery.
+        </p>
+    </div>
+
+    <div class="anchors" id="photoanchor">
+        <h2>PHOTO</h2>
+    </div>
+
+    <div class="photobanner">
+
+        <a href="photo.html">  
+            <div id="sport" class="photochunk">
+                <div class="overlay" id="overlay1">
+                    <h3>SPORT</h3>
+                    </div>
+            </div>
+        </a>
+
+        <a href="photo.html">  
+          <div id="adventure" class="photochunk">
+              <div class="overlay"  id="overlay2">
+                  <h3>ADVENTURE</h3>
+              </div>
+          </div>
+        </a>
+
+          <a href="photo.html">  
+            <div id="landscape" class="photochunk">
+                <div class="overlay"  id="overlay3">
+                    <h3>LANDSCAPE</h3>
+                </div>
+            </div>
+        </a>
+
+          <a href="photo.html">  
+            <div id="product" class="photochunk">
+                <div class="overlay"  id="overlay4">
+                    <h3>PRODUCT</h3>
+                    </div>
+            </div>
+        </a>
+      
+    </div>
+
+    
+    <div class="anchors" id="videoanchor">
+        <h2>VIDEO</h2>
+    </div>
+
+    <div class="bigvideo">
+
+      <video  id="bigvideoreel" autoplay loop>
+        <source src=" images/videoreel.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <div class="anchors">
+        <h2>RECENT WORK</h2>
+    </div>
+
+    <div class="mainproject">
+
+      <img src="images/project1.png" alt="Image of Project 1">
+    </div>
+
+    <div class="thumbcontainer">
+      <div class="projthumb">
+        <img src="images/project2.png" alt="Image of Project 2">
+      </div>  
+
+      <div class="projthumb">
+        <img src="images/project3.png" alt="Image of Project 3">
+      </div>  
+
+      <div class="projthumb">
+        <img src="images/project4.png" alt="Image of Project 4">
+      </div>  
+    </div>
+
+
+    <div class="contact" id="contactanchor">
+
+      <div class="leftcontact">
+        <h3>Reach Out!</h3>
+
+        <p>Jayden Inniss <br> info@whitewaterproductions.ca</p>
+      </div>
+
+      <div class="rightcontact">
+      <img class="contact-img" src="images/me.jpg" alt="Photo of me">
+      </div>
+
+    </div>
+
+    <footer>
+
+      <div class="weatherwidget">
+          <div class="weathericon">
+            <img  alt="weather" class="weathericonimg" src="images/weathericons/clear.png">
+          </div>
+
+          <h2 id="temp">21&deg;</h2>
+          <h2 id="main">Current</h2>
+          <h2 id="city"> in Vancouver</h2>
+        </div>
+
+              <div class="footercontent">
+          <h3 id="footercontenth3">Jayden Inniss   |   Whitewater Productions</h3>
+        </div>
+
+    </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <!-- This is initializing GSAP! I only used it in a few small places, but it was very handy! -->
+
+    <script src="/scripts/script.js"></script>
+    <!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
+
+
+    
+</body>
+</html>
