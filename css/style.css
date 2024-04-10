@@ -141,7 +141,7 @@ nav{
   }
   
   nav a{
-    color: rgb(21, 154, 221);
+    color: #159add;
     text-decoration: none;
     font-size: 2rem;
     font-family: 'Circular STD', Arial, Helvetica, sans-serif;
@@ -198,6 +198,7 @@ nav{
     font-weight: 700;
     line-height: normal;
   }
+  
 
   h3 {
     display: flex;
@@ -351,9 +352,10 @@ nav{
 
   #bigvideoreel {
     display: flex;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 80vh;
-    width: 80vw;
+    width: 100vw;
     z-index: 8;
   }
 
@@ -388,6 +390,25 @@ nav{
     width: 100%;
   }
 
+  /* Setting the carousel height*/
+  .main-carousel {
+    height: 600px;
+    padding-top: 200vh;
+    position: absolute;
+    }
+
+    /*Setting the individual cell height to be the full height of the main-carousel parent*/
+    .carousel-cell {
+    height: 100%;
+    position: absolute;
+      padding-right: 1vw;
+    }
+
+    /*Makes all of the images consistent*/
+    .images {
+        height: 600px;
+    }
+
   .contact {
     background-color: #2d2d2d;
     padding-bottom: 200px;  
@@ -414,7 +435,31 @@ nav{
 }
 
 #contactfooter {
-  margin-top: 210vh;
+  margin-top: 3vh;
+}
+
+.imagenav {
+  border-radius: 50%;
+  /* filter: invert( ); */
+  filter: hue-rotate(195deg);
+}
+
+#videodescription {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#thumbnail-area {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#clientprojects {
+display: flex;
+margin-left: auto;
+margin-right: auto;
 }
 
 
@@ -478,6 +523,12 @@ nav{
     overflow: hidden;
     /* rotate: 90deg; */
 
+  }
+
+  .clickable {
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
@@ -547,6 +598,10 @@ nav{
     .downarrow {
     display: none;
   }
+
+  .clickable {
+    width: 40vw;
+  }
   
 }
 
@@ -556,6 +611,31 @@ nav{
   h3 {
     font-size: 2rem;
 
+  }
+
+  .parallax {
+
+    width: 100vw;
+    height: 90vh;
+    background-attachment: fixed;
+    background-size: contain;
+  }
+
+  .clickable {
+    width: 18vw;
+    padding-right: 0;
+  }
+
+  #videodescription {
+    font-size: 0.8rem;
+    margin-left: 10vw;
+    padding-right: 0vw;
+    width: 80vw;
+  }
+  
+  .imagenav {
+    width: 8vw;
+    padding-right: 0;
   }
 
   #bigvideoreel {
@@ -636,10 +716,12 @@ nav{
 
   #hero-banner {
     height: 36vh;
+    background-image: url("/images/waterhero.jpg");
+    background-size: cover;
   }
 
   .photoherobanner {
-    background-image: url("/images/project1.png");
+
     background-size: cover;
   }
 
@@ -700,9 +782,9 @@ nav{
     padding-right: 0;
   }
 
-  #contactfooter {
+  /* #contactfooter {
     margin-top: 5vh;
-  }
+  } */
 
   .footercontent {
     float: right;
@@ -716,6 +798,20 @@ nav{
 
   #footercontenth3 {
     font-size: 1rem;
+  }
+
+  #photopagetitle {
+    margin-top: 20vh;
+  }
+
+  .carousel-cell {
+    height: 30vh;
+
+  }
+  .main-carousel {
+    padding-top: 0;
+    height: 40vh;
+    overflow: visible;;
   }
 
 }

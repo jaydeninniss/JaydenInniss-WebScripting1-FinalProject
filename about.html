@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Scripting - About Jayden Inniss</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="/node_modules/flickity/css/flickity.css" media="screen">
+
 </head>
 <body>
 
@@ -14,6 +17,9 @@
         <img class="headlogo" src="images/wplogo.svg" alt="Whitewater Productions Logo">
         </a>
 
+        <!-- <div id="maintitle">
+          <h2>Jayden Inniss - Whitewater Productions</h2>
+        </div> -->
 
         <nav id="desktop-menu">
           <ul>
@@ -49,6 +55,17 @@
 
 
 
+      <div class="main-carousel">
+        <!-- The main-carousel is the holder of all of the carousel cell
+        These divs are the images that will be switching-->
+        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-41.jpg"alt="UFO parking"></div>
+        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-77.jpg"alt="UFO parking"></div>
+        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-79.jpg"alt="UFO parking"></div>
+        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-64.jpeg"alt="UFO parking"></div>
+        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-35.jpg"alt="UFO parking"></div>
+
+      </div>
+
 
       <footer id="contactfooter">
 
@@ -73,6 +90,40 @@
       <script src="/scripts/script.js"></script>
       <!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
 
-    
+
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+          <!-- This is linking to the JS file for Flickity! I am making an image slider! -->
+          <script src="/node_modules/flickity/dist/flickity.pkgd.js"></script>
+
+          <script>
+          var elem = document.querySelector('.main-carousel');
+          var flkty = new Flickity( elem, {
+          //This is the code from Flickity, in this code block is where you put the options:
+
+          contain: true,
+          autoPlay: true,
+          //Turns on the autoplay
+
+          autoPlay: 1500,
+          //Sets the autoplay interval
+
+          wrapAround: true,
+      
+          pauseAutoPlayOnHover: false,
+          //Makes sure it doesn't stop playing on hover
+
+          fade: true,
+          //Turns the fade on! But it needs that external JS file sourced above!
+
+          prevNextButtons: false,
+          //Gets rid of the forward and back arrows
+
+          pageDots: true,
+          //Turns on the dots
+
+
+          });
+
+        </script>
 </body>
 </html>

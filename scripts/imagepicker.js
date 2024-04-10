@@ -87,7 +87,7 @@
 				} else {
 					//The false result (using else) will run if the thumbnail matches the main image. We will make the opacity 100% and add a solid blue border!
 				thisthumb.style.opacity = 1;
-				thisthumb.style.border = "thick solid #0000FF";
+				thisthumb.style.border = "thick solid #159add";
 				}
 			})
 
