@@ -5,125 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Scripting - About Jayden Inniss</title>
     <link rel="stylesheet" href="./css/style.css">
+    <!-- These CSS Files are for the Flickity plugin! -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="/node_modules/flickity/css/flickity.css" media="screen">
-
 </head>
 <body>
 
-    <header class="header">
-
-      <a href="index.html">
-        <img class="headlogo" src="images/wplogo.svg" alt="Whitewater Productions Logo">
-        </a>
-
-        <!-- <div id="maintitle">
-          <h2>Jayden Inniss - Whitewater Productions</h2>
-        </div> -->
-
-        <nav id="desktop-menu">
-          <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="index.html#photoanchor">PHOTO</a></li>
-          <li><a href="index.html#videoanchor">VIDEO</a></li>
-          <li><a href="index.html#contactanchor">CONTACT</a></li>
-        </ul>
-      </nav>
-
-      </header>
+<header class="header">
+  <a href="index.html">
+    <img class="headlogo" src="images/wplogo.svg" alt="Whitewater Productions Logo">
+  </a>
+    <div id="maintitle">
+      <h2>Jayden Inniss - Whitewater Productions</h2>
+    </div>
+    <nav id="desktop-menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="index.html#photoanchor">PHOTO</a></li>
+        <li><a href="index.html#videoanchor">VIDEO</a></li>
+        <li><a href="index.html#contactanchor">CONTACT</a></li>
+      </ul>
+  </nav>
+</header>
       
-      <div id="contactpage">
-
-        <div class="contactbg"></div>
-        <!-- <img src="images/landscape.jpg" alt="Photo Banner" width="100%"> -->
-        
-        <div class="pagetitle" id="contactpagetitle">
-            <h2>ABOUT</h2>
-        </div>  
-
-        <div class="contactinfo">
-
-          <p id="contactname">Jayden Inniss</p>
-
-          <p id="contactemail">Growing up in Whistler, BC, I have been exposed to extreme outdoor sports and adventure my whole life. My favourite adventures are the ones where I have my camera in hand to shoot, film, and record incredible experiences. Whether it be biking, skiing, paddling or hiking, I'll always have my camera in my pack.</p>
-        </div>
-      </div>
-
-
-
-
-
-
-      <div class="main-carousel">
+<div id="contactpage">
+  <div class="contactbg"></div>
+    <div class="pagetitle" id="contactpagetitle">
+      <h2>ABOUT</h2>
+    </div>  
+    <div class="contactinfo">
+      <p id="contactname">Jayden Inniss</p>
+      <p id="contactemail">Growing up in Whistler, BC, I have been exposed to extreme outdoor sports and adventure my whole life. My favourite adventures are the ones where I have my camera in hand to shoot, film, and record incredible experiences. Whether it be biking, skiing, paddling or hiking, I'll always have my camera in my pack.</p>
+    </div>
+</div>
+    <div class="main-carousel">
         <!-- The main-carousel is the holder of all of the carousel cell
         These divs are the images that will be switching-->
-        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-41.jpg"alt="UFO parking"></div>
-        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-77.jpg"alt="UFO parking"></div>
-        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-79.jpg"alt="UFO parking"></div>
-        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-64.jpeg"alt="UFO parking"></div>
-        <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-35.jpg"alt="UFO parking"></div>
+      <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-41.jpg" alt="UFO parking"></div>
+      <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-77.jpg" alt="UFO parking"></div>
+      <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-79.jpg" alt="UFO parking"></div>
+      <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-64.jpeg" alt="UFO parking"></div>
+      <div class="carousel-cell"><img class="images" src="images/gallery/photogrid-35.jpg" alt="UFO parking"></div>
+</div>
 
+<footer>
+  <!-- Weather API -->
+  <div class="weatherwidget">
+      <div class="weathericon">
+          <img  alt="weather" class="weathericonimg" src="images/weathericons/clear.png">
       </div>
+        <!-- This is placeholder text that gets replaced with information from the API! -->
+      <h2 id="temp">21&deg;</h2>
+      <h2 id="main">Current</h2>
+      <h2 id="city"> in Vancouver</h2>
+  </div>
+  <div class="footercontent">
+      <h3 id="footercontenth3">Jayden Inniss   |   Whitewater Productions</h3>
+  </div>
+</footer>
 
+<!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
+<script src="/scripts/script.js"></script>
 
-      <footer id="contactfooter">
+<!-- This is linking to the JS file for Flickity! I am making an image slider! -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-        <div class="weatherwidget">
-            <div class="weathericon">
-              <img  alt="weather" class="weathericonimg">
-            </div>
-  
-            <h2 id="temp">21&deg;</h2>
-            <h2 id="main">Current</h2>
-            <h2 id="city"> in Vancouver</h2>
-          </div>
-  
-                <div class="footercontent">
-            <h3 id="footercontenth3">Jayden Inniss   |   Whitewater Productions</h3>
-          </div>
-  
-      </footer>
+<!-- This also links to the Flickity JS! -->
+<script src="/node_modules/flickity/dist/flickity.pkgd.js"></script>
 
+<script>
+  // Targets the element with the class .main-carousel class and creates a variable called elem
+    var elem = document.querySelector('.main-carousel');
 
+    // This is the code from Flickity, in this code block is where you put the options:
+    var flkty = new Flickity( elem, {
 
-      <script src="/scripts/script.js"></script>
-      <!-- In this JS file, I am using a weather API to have live weather in the footer of my site! -->
+    // Turns on the autoplay
+    autoPlay: true,
 
+    // Sets the autoplay interval to 1500ms
+    autoPlay: 1500,
+    
+    // Allows for images to wrap around the carousel
+    wrapAround: true,
 
-      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-          <!-- This is linking to the JS file for Flickity! I am making an image slider! -->
-          <script src="/node_modules/flickity/dist/flickity.pkgd.js"></script>
+    // Makes sure it doesn't stop playing on hover
+    pauseAutoPlayOnHover: false,
 
-          <script>
-          var elem = document.querySelector('.main-carousel');
-          var flkty = new Flickity( elem, {
-          //This is the code from Flickity, in this code block is where you put the options:
+    // Turns the fade on! But it needs that external JS file sourced above!
+    fade: true,
 
-          contain: true,
-          autoPlay: true,
-          //Turns on the autoplay
+    // Gets rid of the forward and back arrows
+    prevNextButtons: false,
+    
+    // Turns on the dots
+    pageDots: true,
+    
+  });
 
-          autoPlay: 1500,
-          //Sets the autoplay interval
-
-          wrapAround: true,
-      
-          pauseAutoPlayOnHover: false,
-          //Makes sure it doesn't stop playing on hover
-
-          fade: true,
-          //Turns the fade on! But it needs that external JS file sourced above!
-
-          prevNextButtons: false,
-          //Gets rid of the forward and back arrows
-
-          pageDots: true,
-          //Turns on the dots
-
-
-          });
-
-        </script>
+</script>
 </body>
 </html>

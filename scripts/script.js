@@ -1,14 +1,9 @@
+// Weather API ----------
 
+// creates a variable called city
 let city;
 
-
-
-
-
-
 async function logweather(city) {
-
-
 
    const response = await fetch("https://api.openweathermap.org/data/2.5/weather?lat=49.28190749158899&lon=-123.10989051451176&appid=12308284112402dcd0444c20a407d318&units=metric");
 
@@ -26,50 +21,64 @@ async function logweather(city) {
 
     };
 
-
 window.addEventListener('load', logweather);
 
+// GSAP ----------
 
-
-//This makes the Photo Columns on the homepage have hover states:
+// Creates a variable for each photo column. This makes the Photo Columns on the homepage have hover states
 let photoColumn1 = document.querySelector("#sport");
 let photoColumn2 = document.querySelector("#adventure");
 let photoColumn3 = document.querySelector("#landscape");
 let photoColumn4 = document.querySelector("#product");
 
-
-//1st Column
+// 1st Column
 let hoverphoto1 = gsap.to("#overlay1", {
+   // pauses the animation
    paused: true,
+   // sets the opacity for the overlay to 0
    opacity: 0
 });
+// plays animation when the mouse enters the element
 photoColumn1.addEventListener("mouseenter", () => hoverphoto1.play());
+// plays the animation in reverse when the mouse exits the element
 photoColumn1.addEventListener("mouseleave", () => hoverphoto1.reverse());
 
 
-//2nd Column
+// 2nd Column
 let hoverphoto2 = gsap.to("#overlay2", {
+   // pauses the animation
    paused: true,
+   // sets the opacity for the overlay to 0
    opacity: 0
 });
+// plays animation when the mouse enters the element
 photoColumn2.addEventListener("mouseenter", () => hoverphoto2.play());
+// plays the animation in reverse when the mouse exits the element
 photoColumn2.addEventListener("mouseleave", () => hoverphoto2.reverse());
 
-//3rd Column
+// 3rd Column
 let hoverphoto3 = gsap.to("#overlay3", {
+   // pauses the animation
    paused: true,
+   // sets the opacity for the overlay to 0
    opacity: 0
 });
+// plays animation when the mouse enters the element
 photoColumn3.addEventListener("mouseenter", () => hoverphoto3.play());
+// plays the animation in reverse when the mouse exits the element
 photoColumn3.addEventListener("mouseleave", () => hoverphoto3.reverse());
 
 
-//4th Column
+// 4th Column
 let hoverphoto4 = gsap.to("#overlay4", {
+   // pauses the animation
    paused: true,
+   // sets the opacity for the overlay to 0
    opacity: 0
 });
+// plays animation when the mouse enters the element
 photoColumn4.addEventListener("mouseenter", () => hoverphoto4.play());
+// plays the animation in reverse when the mouse exits the element
 photoColumn4.addEventListener("mouseleave", () => hoverphoto4.reverse());
 
 
